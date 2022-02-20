@@ -1,0 +1,43 @@
+class Params
+{
+	class Daytime
+	{
+		title = "Time of day";
+		texts[] = {"Morning","Day","Evening","Night"};
+		values[] = {6,12,18,0};
+		default = 12;
+		function = "BIS_fnc_paramDaytime";
+	};
+
+	class PlayerBinoculars
+	{
+		title = "Binoculars";
+		texts[] = {"None","Binoculars", "Rangefinder"};
+		values[] = {0,1,2};
+		default = 1;
+	};
+
+	class PlayerCompass
+	{
+		title = "Compass";
+		texts[] = {"No","Yes"};
+		values[] = {0,1};
+		default = 1;
+	};
+
+	class PlayerMapTools
+	{
+		title = "Map Tools (Only has an effect if ACE is loaded)";
+		texts[] = {"No","Yes"};
+		values[] = {0,1};
+		default = 0; //Currently disabled by default, as using the map tools inadvertently causes a guess
+	};
+
+	class ShowAO
+	{
+		title = "Show AO";
+		texts[] = {"500m", "1km", "2.5km", "5km", "8km", "Show none"};
+		values[] = {500, 1000, 2500, 5000, 8000, -1};
+		default = 2500;
+	};
+};
